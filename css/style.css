@@ -3,14 +3,148 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --black-color: #111;
+    --white-color: rgba(255, 255, 255, 0.9);
+    --secondary-color: #e3e0e0dd;
+}
 html{
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 0.413rem;
+    border-radius: 3x;
+}
+a:hover{
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
 
 /* header section */
+header{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 /* navbar section */
-/* main content section */
-/* banner section */
+nav{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+nav ul li a img{
+    width: 100px;
+}
+nav ul li a{
+    font-size: 0.813rem;
+    text-transform: uppercase;
+}
+nav .fa-cart-shopping{
+    font-size: 0.813rem;
+    position: relative;
+}
+#quantity{
+    font-size: 0.625rem;
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    padding: 1.5px 4px;
+    border-radius: 10px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+/* end header design  */
+
+
+
+/* main content section design */
+
+/* banner section design */
+.banner-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg/bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+/* end banner section design */
+
+
 /* about us section */
+.about-section{
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+}
+.about-section h2{
+    font-size: 1.413rem;
+    text-transform: uppercase;
+}
+.about-section #p{
+    max-width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 0.625rem;
+}
+.about-section #img{
+    height: 20px;
+    margin-bottom: 2rem;
+}
+.about-section .pictures{
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.about-section .picture{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+.about-section .picture img{
+    width: 175px;
+    height: 175px;
+}
+.about-section .picture #img-2{
+    display: none;
+}
+.about-section .picture:hover #img-1{
+    display: none;
+}
+.about-section .picture:hover #img-2{
+    display: block;
+}
+.about-section .picture h3{
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    margin-top: 1rem;
+}
+.about-section .picture p{
+    text-transform: uppercase;
+    font-size: 0.413rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+/* end about us section */
 /* our philosophy section */
 /* footer section */
