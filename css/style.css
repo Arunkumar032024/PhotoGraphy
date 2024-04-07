@@ -59,6 +59,9 @@ nav .fa-cart-shopping{
     font-size: 0.813rem;
     position: relative;
 }
+nav .bars{
+    display: none;
+}
 #quantity{
     font-size: 0.625rem;
     position: absolute;
@@ -101,7 +104,7 @@ nav .fa-cart-shopping{
     max-width: 60%;
     margin: 1rem auto;
     text-align: center;
-    font-size: 0.625rem;
+    font-size: 1.125rem;
 }
 .about-section #img{
     height: 20px;
@@ -109,11 +112,14 @@ nav .fa-cart-shopping{
 }
 .about-section .pictures{
     background-color: var(--secondary-color);
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 2rem 0;    
+}
+.about-section .pictures .div{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 275px 275px 275px;
     gap: 1rem;
+    margin: auto;
 }
 .about-section .picture{
     padding: 10px;
@@ -122,8 +128,7 @@ nav .fa-cart-shopping{
     cursor: pointer;
 }
 .about-section .picture img{
-    width: 175px;
-    height: 175px;
+    width: 100%;
 }
 .about-section .picture #img-2{
     display: none;
@@ -146,5 +151,204 @@ nav .fa-cart-shopping{
     margin-bottom: 1rem;
 }
 /* end about us section */
+
+
 /* our philosophy section */
+.phy-section{
+    padding-top: 2rem;
+    text-align: center;
+}
+.phy-section h2{
+    font-size: 1.413rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.phy-section .para{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: justify;
+    gap: 1rem;
+    line-height: 1.425rem;
+    padding: 2rem 0;
+}
+.phy-section .p{
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    width: 50%;
+    margin: auto;
+    line-height: 2.5rem;
+}
+
+.phy-section .block{
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.phy-section .block .row{
+    display: flex;
+}
+.phy-section .block .row div{
+    min-height: 75vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.phy-section .row-1 .left img,
+.phy-section .row-2 .right img{
+    width: 100%;
+    height: 100%;
+}
+.phy-section .row-1 .right{
+    align-items: flex-start;
+}
+.phy-section .row-2 .left {
+    align-items: flex-end;
+}
+.phy-section .row-1 .right,
+.phy-section .row-2 .left {
+    padding: 1rem;
+}
+.phy-section .row p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.phy-section .row h3{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.phy-section .row .btn{
+    width: fit-content;
+    padding: 15px 30px;
+    border: none;
+    border: none;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.phy-section .row .btn:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.phy-section .img{
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+.phy-section .img img{
+    width: 100%;
+}
+.phy-section .p-2{
+    width: 100%;
+    padding: 5% 20%;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    background-color: var(--secondary-color);
+}
+.phy-section .products{
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.phy-section .product{
+    background-color: var(--white-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+.phy-section .product img{
+    width: 100%;
+}
+.phy-section .product p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    margin: 5%;
+}
+/* end our philosophy section */
+
 /* footer section */
+footer{
+    width: 100%;
+    background-color: var(--black-color);
+    padding: 2rem;
+}
+footer .heading{
+    text-align: center;
+}
+footer .heading img{
+    height: 80px;
+}
+footer .content{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 1rem;
+}
+footer h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+footer .content div{
+    padding: 1rem;
+    color: var(--white-color);
+}
+footer .content div:first-child img{
+    max-width: 100%;
+}
+footer .product{
+    display: flex;
+    align-items: center;
+    
+}
+footer .product img{
+    width: 60px;
+}
+footer .product p{
+    text-align: center;
+    margin-left: 10%;
+}
+footer .product p span{
+    color: var(--secondary-color);
+}
+footer .posts p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+footer .posts p span{
+    color: var(--secondary-color);
+}
+footer .social{
+    margin: 1rem 0;
+}
+footer .social p{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .social p i{
+    color: var(--white-color);
+    cursor: pointer;
+}
+footer .para,
+footer .para a{
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+ /* end footer section */

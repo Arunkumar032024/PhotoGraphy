@@ -25,18 +25,42 @@
     /* main content section */
     /* banner section */
     /* about us section */
+    .about-section .pictures{
+        padding: 2rem;
+    }
+    .about-section .pictures .div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     /* our philosophy section */
     /* footer section */
+    footer .content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 767px) {
     /* header section */
     /* navbar section */
+    nav ul li.nav-link{
+        display: none;
+    }
+    nav .bars{
+        display: inline-block;
+    }
     /* main content section */
     /* banner section */
     /* about us section */
+    .about-section .pictures .div{
+        grid-template-columns: 1fr 1fr;
+    }
     /* our philosophy section */
+    .phy-section .products{
+        grid-template-columns: 1fr 1fr;
+    }
     /* footer section */
+    footer .content{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 592px) {
@@ -45,8 +69,29 @@
     /* main content section */
     /* banner section */
     /* about us section */
+    .about-section .pictures{
+        padding: 1rem;
+    }
+    .about-section .pictures .div{
+        grid-template-columns: 1fr 1fr;
+    }
     /* our philosophy section */
+    .phy-section .block .row{
+        flex-direction: column;
+    }
+    .phy-section .block .row div{
+        width: 100%;
+        min-height: auto;
+    }
+    .phy-section .row-1 .right,
+    .phy-section .row-2 .left { 
+        padding: 3rem;
+    }
+    
     /* footer section */
+    footer .content{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -55,8 +100,20 @@
     /* main content section */
     /* banner section */
     /* about us section */
+    .about-section .pictures .div{
+        grid-template-columns: 1fr ;
+    }
     /* our philosophy section */
+    .phy-section .p-2{
+        font-size: 1.25rem;
+    }
+    .phy-section .products{
+        grid-template-columns: 1fr;
+    }
     /* footer section */
+    footer{
+        padding: 0.413rem;
+    }
 }
 
 @media (max-width: 333px) {
@@ -65,6 +122,10 @@
     /* main content section */
     /* banner section */
     /* about us section */
+    
     /* our philosophy section */
+    .phy-section .para{
+        flex-direction: column;
+    }
     /* footer section */
 }
